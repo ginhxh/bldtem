@@ -245,7 +245,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
   };
 
-  // Map each position to its coordinates
   const positionStyles = {
     GK: { left: "42%", bottom: "10%" },
     CB1: { left: "30%", bottom: "33%" },
