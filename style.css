@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: rgb(135, 169, 189);
+}
+ul {
+  padding: 16px;
+  margin: auto;
+  width: 20%;
+  list-style: none;
+  display: flex;
+  justify-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  justify-content: space-evenly;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover {
+  color: red;
+}
+
+.container-form {
+  width: 800px;
+  display: flex;
+  margin: auto;
+  align-items: flex-start;
+  gap: 48px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.hed {
+  margin-bottom: 48px;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+.firstHalf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+input {
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+select {
+  padding: 16px 32px;
+}
+.mn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit-js {
+  padding: 16px 64px;
+  border-radius: 8px;
+  background-color: orangered;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+@media (max-width: 800px) {
+  .terain {
+    width: 80%;
+  }
+
+  ul {
+    width: 80%;
+  }
+  .container-form {
+    width: 60%;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics {
+    align-items: center;
+  }
+  .hed {
+    width: 100%;
+  }
+}
+
+@media (max-width: 405px) {
+  .terain {
+    width: 100%;
+  }
+  .statistics {
+    align-items: flex-end;
+  }
+  .hed {
+    width: 100%;
+  }
+}
+
+/* jouer and teraain */
+.mainmin {
+  width: 100%;
+}
+.terain {
+  position: relative;
+  margin: auto;
+  width: 580px;
+  height: 60vh;
+  background-image: url(img/stadium_background.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow-x: hidden;
+}
+.players {
+  background-image: url(img/badge_gold.webp);
+  background-size: contain;
+  width: 80px;
+  height: 110px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.players img {
+  width: 60px;
+}
+.shownplr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 9px;
+}
+
+.players h6 {
+  font-size: 9px;
+}
+.addplayer {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+}
+.GK {
+  position: absolute;
+  left: 42%;
+  bottom: 10%;
+}
+.CB1 {
+  left: 30%;
+  bottom: 33%;
+  position: absolute;
+}
+.CB2 {
+  left: 60%;
+  bottom: 33%;
+  position: absolute;
+}
+.LB {
+  left: 85%;
+  bottom: 33%;
+  position: absolute;
+}
+.RB {
+  bottom: 33%;
+  position: absolute;
+}
+.CM1 {
+  left: 20%;
+  bottom: 55%;
+  position: absolute;
+}
+.CM2 {
+  left: 45%;
+  bottom: 55%;
+  position: absolute;
+}
+.CM3 {
+  left: 70%;
+  bottom: 55%;
+  position: absolute;
+}
+.LW {
+  left: 20%;
+  bottom: 77%;
+
+  position: absolute;
+}
+.RW {
+  left: 67%;
+  bottom: 77%;
+
+  position: absolute;
+}
+.ST {
+  left: 45%;
+  bottom: 77%;
+  position: absolute;
+}
+.storedPlayers {
+  margin: auto;
+  display: flex;
+  overflow: scroll;
+}
+/* carddddddddddddddddddddddddddddddddd */
+
+.card {
+  background-image: url(img/badge_gold.webp);
+  width: 160px;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.uphalf {
+  display: flex;
+}
+.leNom {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.lefthalfup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lefthalfup img {
+  max-width: 30%;
+}
+.righthalf img {
+  max-width: 80%;
+}
+.downhalfup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lefthalfdown,
+.rightleftdown {
+  display: flex;
+  gap: 2px;
+}
+.downhalfdown {
+  display: flex;
+  gap: 6px;
+}
+/* cardin terain */

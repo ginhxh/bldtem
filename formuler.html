@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form-page">
+    <header>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="formuler.html">Add Players</a></li>
+      </ul>
+    </header>
+    <main class="mn">
+      <h1 class="hed">Add your team members</h1>
+
+      <div class="container-form">
+        <div class="firstHalf">
+          <div class="position">
+            <select class="posiition" name="" id="">
+              <option value="default">Select Position</option>
+              <option value="RM">Right Midfielder (RM)</option>
+              <option value="RW">Right Wing (RW)</option>
+              <option value="ST">Striker (ST)</option>
+              <option value="CM1">Central Midfielder (CM1)</option>
+              <option value="CM2">Central Midfielder (CM2)</option>
+              <option value="CM3">Central Midfielder (CM3)</option>
+              <option value="CB1">Center Back (CB1)</option>
+              <option value="CB2">Center Back (CB2)</option>
+              <option value="LM">Left Midfielder (LM)</option>
+              <option value="LW">Left Wing (LW)</option>
+              <option value="GK">Goalkeeper (GK)</option>
+              <option value="LB">Left Back (LB)</option>
+              <option value="RB">Right Back (RB)</option>
+            </select>
+          </div>
+          <div class="nameofplayer">
+            <h4>Player Name</h4>
+            <input class="player-name" type="text" />
+          </div>
+          <div class="playerPic">
+            <h4>Choose Player Picture</h4>
+            <input class="player-pic" type="text" />
+          </div>
+          <div class="nationality">
+            <h4>Player Nationality</h4>
+            <input class="country" type="text" />
+          </div>
+          <div class="flags">
+            <h4>Select a Flag</h4>
+            <input class="flagss" type="text" />
+          </div>
+          <div class="player-club">
+            <h4>Player Club</h4>
+            <input class="club-names" type="text" />
+          </div>
+          <div class="club-flag">
+            <h4>Club Logo</h4>
+            <input class="club-log" type="text" />
+          </div>
+        </div>
+
+        <div class="statistics">
+          <div>
+            <label for="rating">Rating:</label>
+            <input class="player-rating" type="number" min="0" max="100" />
+          </div>
+          <div>
+            <label for="pace">Pace:</label>
+            <input class="player-pace" type="number" min="0" max="100" />
+          </div>
+          <div>
+            <label for="shooting">Shooting:</label>
+            <input class="player-shooting" type="number" min="0" max="100" />
+          </div>
+          <div>
+            <label for="passing">Passing:</label>
+            <input class="player-passing" type="number" min="0" max="100" />
+          </div>
+          <div>
+            <label for="dribbling">Dribbling:</label>
+            <input class="player-dribbling" type="number" min="0" max="100" />
+          </div>
+          <div>
+            <label for="defending">Defending:</label>
+            <input class="player-defending" type="number" min="0" max="100" />
+          </div>
+          <div>
+            <label for="physical">Physical:</label>
+            <input class="player-physical" type="number" min="0" max="100" />
+          </div>
+        </div>
+      </div>
+      <button class="submit-js">Submit</button>
+    </main>
+  </body>
+  <script src="js.js"></script>
+</html>

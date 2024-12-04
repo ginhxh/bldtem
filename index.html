@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Formation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="main-page">
+    <header>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="formuler.html">Add Players</a></li>
+        <select name="formation" id="formation">
+          <option value="4-3-3">4-3-3</option>
+          <option value="4-4-2">4-4-2</option>
+        </select>
+      </ul>
+    </header>
+    <main class="mainmin">
+      <section class="terain">
+        <div class="players LW" data-position="LW">
+          <button class="addplayer">LW</button>
+        </div>
+        <div class="players ST" data-position="ST">
+          <button class="addplayer">ST</button>
+        </div>
+        <div class="players RW" data-position="RW">
+          <button class="addplayer">RW</button>
+        </div>
+        <div class="players CM3" data-position="CM1">
+          <button class="addplayer">CM3</button>
+        </div>
+        <div class="players CM2" data-position="CM2">
+          <button class="addplayer">CM2</button>
+        </div>
+        <div class="players CM1" data-position="CM3">
+          <button class="addplayer">CM1</button>
+        </div>
+        <div class="players LB" data-position="LB">
+          <button class="addplayer">LB</button>
+        </div>
+        <div class="players CB2" data-position="CB1">
+          <button class="addplayer">CB2</button>
+        </div>
+        <div class="players CB1" data-position="CB2">
+          <button class="addplayer">CB1</button>
+        </div>
+        <div class="players RB" data-position="RB">
+          <button class="addplayer">RB</button>
+        </div>
+        <div class="players GK" data-position="GK">
+          <button class="addplayer">GK</button>
+        </div>
+        <div class="players ST1" data-position="ST1" style="display: none">
+          <button class="addplayer">ST1</button>
+        </div>
+        <div class="players ST2" data-position="ST2" style="display: none">
+          <button class="addplayer">ST2</button>
+        </div>
+      </section>
+      <section class="storedPlayers"></section>
+    </main>
+    <script src="js.js"></script>
+  </body>
+</html>
